@@ -1,0 +1,15 @@
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\bin\Debug\net7.0\FizzBuzz.exe
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\bin\Debug\net7.0\FizzBuzz.deps.json
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\bin\Debug\net7.0\FizzBuzz.runtimeconfig.json
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\bin\Debug\net7.0\FizzBuzz.dll
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\bin\Debug\net7.0\FizzBuzz.pdb
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\FizzBuzz.csproj.AssemblyReference.cache
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\FizzBuzz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\FizzBuzz.AssemblyInfoInputs.cache
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\FizzBuzz.AssemblyInfo.cs
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\FizzBuzz.csproj.CoreCompileInputs.cache
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\FizzBuzz.dll
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\refint\FizzBuzz.dll
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\FizzBuzz.pdb
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\FizzBuzz.genruntimeconfig.cache
+C:\Users\Paul\Programming Stuff\Softwire\Training\C#\FizzBuzz\obj\Debug\net7.0\ref\FizzBuzz.dll
