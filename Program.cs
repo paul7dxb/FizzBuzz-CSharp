@@ -7,7 +7,7 @@ namespace Fizzbuzz
     {
         static void Main(string[] args)
         {
-            int max = 100;
+            int max = 200;
 
             var fizzBuzzer = new FizzBuzzer();
 
