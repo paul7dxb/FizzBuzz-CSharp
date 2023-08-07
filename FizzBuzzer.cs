@@ -4,34 +4,38 @@ namespace Fizzbuzz
 
     public class FizzBuzzer
     {
+        private List<int> gameOptions;
+        public FizzBuzzer(List<int> gameOptions){
+            this.gameOptions = gameOptions;
+        }
         public string Fizzbuzz(int n)
         {
             List<string> result = new List<string>();
-            if (IsDivisibleBy(n, 3))
+            if (RuelInOptions(3) && IsDivisibleBy(n, 3))
             {
                 result.Add("Fizz");
             }
-            if (IsDivisibleBy(n, 5))
+            if (RuelInOptions(5) && IsDivisibleBy(n, 5))
             {
                 result.Add("Buzz");
             }
-            if (IsDivisibleBy(n, 7))
+            if (RuelInOptions(7) && IsDivisibleBy(n, 7))
             {
                 result.Add("Bang");
 
             }
-            if (IsDivisibleBy(n, 11))
+            if (RuelInOptions(11) && IsDivisibleBy(n, 11))
             {
                 result.Clear();
                 result.Add("Bong");
             }
 
-            if (IsDivisibleBy(n, 13))
+            if (RuelInOptions(13) && IsDivisibleBy(n, 13))
             {
                 result = AddFezzBeforeB(result);
             }
 
-            if (IsDivisibleBy(n, 17))
+            if (RuelInOptions(17) && IsDivisibleBy(n, 17))
             {
                 result.Reverse();
             }
@@ -66,6 +70,11 @@ namespace Fizzbuzz
                 newResults.Add("Fezz");
             }
             return newResults;
+        }
+
+        private bool RuelInOptions(int n){
+            int indexRule = gameOptions.IndexOf(n);
+            return indexRule >= 0;
         }
     }
 }
