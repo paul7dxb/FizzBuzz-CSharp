@@ -28,7 +28,12 @@ namespace Fizzbuzz
 
             if (IsDivisibleBy(n, 13))
             {
-                AddFezzBeforeB(result);
+                result = AddFezzBeforeB(result);
+            }
+
+            if (IsDivisibleBy(n, 17))
+            {
+                result.Reverse();
             }
 
             if (result.Count == 0)
@@ -39,7 +44,7 @@ namespace Fizzbuzz
             return ResultArrToString(result);
         }
 
-        private string ResultArrToString(List<string> results)
+        private static string ResultArrToString(List<string> results)
         {
             return String.Join("", results);
         }
@@ -48,17 +53,19 @@ namespace Fizzbuzz
             return (number % divisor) == 0;
         }
 
-        private static void AddFezzBeforeB(List<string> result)
+        private static List<string> AddFezzBeforeB(List<string> result)
         { 
-            var indexB = result.FindIndex(word => word.StartsWith("B"));
+            var newResults = new List<string>(result);
+            var indexB = newResults.FindIndex(word => word.StartsWith("B"));
             if (indexB >= 0)
             {
-                result.Insert(indexB, "Fezz");
+                newResults.Insert(indexB, "Fezz");
             }
             else
             {
-                result.Add("Fezz");
+                newResults.Add("Fezz");
             }
+            return newResults;
         }
     }
 }
