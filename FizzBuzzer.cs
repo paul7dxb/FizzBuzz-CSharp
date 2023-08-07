@@ -6,29 +6,36 @@ namespace Fizzbuzz
     {
         public string Fizzbuzz(int n)
         {
-            string result = "";
+            List<string> result = new List<string>();
             if (IsDivisibleBy(n, 3))
             {
-                result += "Fizz";
+                result.Add("Fizz");
             }
             if (IsDivisibleBy(n, 5))
             {
-                result += "Buzz";
+                result.Add("Buzz");
             }
             if (IsDivisibleBy(n, 7))
             {
-                result += "Bang";
+                result.Add("Bang");
+
             }
             if (IsDivisibleBy(n, 11))
             {
-                result = "Bong";
+                result.Clear();
+                result.Add("Bong");
             }
 
-            if (result == "")
+            if (result.Count == 0)
             {
-                result = n.ToString();
+                result.Add(n.ToString());
             }
-            return result;
+
+            return ResultArrToString(result);
+        }
+
+        private string ResultArrToString(List<string> results){
+            return String.Join("", results);
         }
         private static bool IsDivisibleBy(int number, int divisor)
         {
