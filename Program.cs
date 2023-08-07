@@ -8,15 +8,8 @@ namespace Fizzbuzz
         static void Main(string[] args)
         {
 
-            List<int> gameOptions;
+            List<int> gameOptions = parseGameArgs(args);
 
-
-            if (args.Length > 0)
-            {
-                gameOptions = parseGameArgs(args);
-            } else{
-                gameOptions = new List<int>{3,5,7,11,13,17};
-            }
 
             int max = 100;
 
@@ -45,20 +38,30 @@ namespace Fizzbuzz
 
         private static List<int> parseGameArgs(string[] args)
         {
-            var gameOptions = new List<int>();
+            List<int> gameOptions;
 
-            foreach (string arg in args)
+            if (args.Length > 0)
             {
-                try
+                gameOptions = new List<int>();
+                foreach (string arg in args)
                 {
-                    int gameParam = Int32.Parse(arg);
-                    gameOptions.Add(gameParam);
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine($"Unable to parse '{arg}' input.");
+                    try
+                    {
+                        int gameParam = Int32.Parse(arg);
+                        gameOptions.Add(gameParam);
+                    }
+                    catch (FormatException)
+                    {
+                        Console.WriteLine($"Unable to parse '{arg}' input.");
+                    }
                 }
             }
+            else
+            {
+                gameOptions = new List<int> { 3, 5, 7, 11, 13, 17 };
+            }
+
+
 
             return gameOptions;
         }
